@@ -41,7 +41,7 @@ def getAvgVelocity(data, route_id, current_time, weekday):
 
             # Only data from within 10 minutes of the current time should be considered in the ETA calculation.
             # Calculate start time (10 minutes before current time) and end time (10 minutes after current time).
-w           start = dt.time(current_time.hour, current_time.minute, current_time.second)
+            start = dt.time(current_time.hour, current_time.minute, current_time.second)
             tmp_startDate = dt.datetime.combine(dt.date(1,1,1), start)
             
             start = tmp_startDate - dt.timedelta(minutes=MAX_TIME_DIFFERENCE_MIN)
