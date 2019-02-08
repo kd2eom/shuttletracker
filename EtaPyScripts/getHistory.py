@@ -68,8 +68,8 @@ if __name__ == '__main__':
     targetRoute = 20
 
 
-    # Currently on localhost
-    url = "http://localhost:8080/history"
+    # URL of the JSON file that contains the history of the shuttles
+    url = "https://shuttles.rpi.edu/history"
 
     response = urllib.request.urlopen(url)
     data = json.loads(response.read())
