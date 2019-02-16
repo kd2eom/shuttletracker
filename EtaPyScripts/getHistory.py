@@ -54,7 +54,7 @@ def getAvgVelocity(data, route_id, current_time, weekday):
             # Determine whether the data we are looking at is within this range
             inTimeRange = time_in_range(start, end, dataTime)
 
-            # The ETA calculation only cares about shuttles running on the current weekday and within
+            # The ETA calculation only cares about shuttles running on the current weekday and on the specified route_id within
             # the time range. if this data entry fits these heuristics, consider it in the ETA calculation. If not, skip it.
             if j["route_id"] == route_id and dataWeekday == weekday and inTimeRange:
                 totalVelocity += j["speed"]
