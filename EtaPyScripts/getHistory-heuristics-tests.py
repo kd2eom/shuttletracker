@@ -345,7 +345,7 @@ if __name__ == '__main__':
     response = response(url)
     data = loadJSON(response)
     
-    # Run 8 different versions of the ETA algorithm (each version uses a different heuristic for calculation) and
+    # Run 7 different versions of the ETA algorithm (each version uses a different heuristic for calculation) and
     # output the results we get under each version.
     # Each version will use the exact same data; thus, any differences in output are solely due to differences
     # in the algorithm. 
